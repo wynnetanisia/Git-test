@@ -1,0 +1,10 @@
+/* MOBILE FIRST STYLES */
+
+header
+{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid var(--green);
+
+    font-family: "Inter", sans-serif;
+}

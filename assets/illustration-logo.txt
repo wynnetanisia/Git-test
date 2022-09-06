@@ -1,0 +1,18 @@
+<iconify-icon icon="bi:people-fill"></iconify-icon>
+<iconify-icon icon="eos-icons:content-new"></iconify-icon>
+<iconify-icon icon="ant-design:read-filled"></iconify-icon>
+
+<iconify-icon icon="ant-design:star-filled"></iconify-icon>
+<iconify-icon icon="ant-design:caret-right-filled"></iconify-icon>
+<iconify-icon icon="bi:image-fill"></iconify-icon>
+<iconify-icon icon="clarity:copy-line"></iconify-icon>
+<iconify-icon icon="clarity:close-line"></iconify-icon>
+
+<iconify-icon icon="akar-icons:whatsapp-fill"></iconify-icon>
+<iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+<iconify-icon icon="bxl:telegram"></iconify-icon>
+<iconify-icon icon="bxs:share-alt"></iconify-icon>
+
+<iconify-icon icon="akar-icons:google-contained-fill"></iconify-icon>
+<iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+<iconify-icon icon="entypo-social:linkedin-with-circle"></iconify-icon>

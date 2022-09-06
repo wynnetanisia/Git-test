@@ -1,0 +1,8 @@
+INTER : 
+- Logo
+- All Footer Content
+
+Montserrat : 
+- Header Navigation
+- Main Content (check if it's fit or not with montserrat, if it's not, then switch to Inter)
+
