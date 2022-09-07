@@ -6,4 +6,57 @@ footer
 
     color: var(--white);
     font-family: "Inter", sans-serif;
+
+    padding-top: 3rem !important;
+    padding-bottom: .5rem !important
+}
+
+footer * 
+{
+    color: var(--white);
+
+    /* centering all the things on mobile size */
+    text-align: center;
+}
+
+footer .ozon-desktop
+{
+    display: none;
+}
+
+footer h2 
+{
+    font-size: 1.25em;
+}
+
+footer .line 
+{
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+    margin: 1rem 0;
+
+    /* only displayed after mobile size */
+    display: none;
+}
+
+footer .top 
+{
+    margin-bottom: 3rem;
+}
+
+footer .bottom
+{
+    text-align: center;
+    font-size: .8em;
+}
+
+footer .bottom .credit
+{
+    opacity: .5;
+}
+
+footer .bottom .credit span 
+{
+    font-weight: 700;
 }
