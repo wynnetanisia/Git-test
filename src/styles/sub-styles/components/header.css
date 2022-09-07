@@ -8,3 +8,92 @@ header
 
     font-family: "Inter", sans-serif;
 }
+
+.header-temp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none !important;
+}
+
+.header-main
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle .bar 
+{
+    width: 36px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--green);
+
+    transition: .5s;
+}
+
+.nav-toggle .bar:nth-child(2)
+{
+    margin: 4px 0;
+}
+
+.nav-toggle.opened .bar:nth-child(2)
+{
+    width: 18px;
+}
+
+.nav-toggle.opened .bar:nth-child(3)
+{
+    width: 27px;
+}
+
+.nav-full 
+{
+    display: none;
+}
+
+.ozon-logo
+{
+    font-size: 1.5em;
+    color: var(--green);
+}
+
+@media screen and (min-width: 768px) {
+    .nav-toggle
+    {
+        display: none;
+    }
+
+    .nav-full
+    {
+        display: block;
+    }
+
+    .nav-full ul
+    {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav-full ul li a
+    {
+        font-family: "Montserrat", sans-serif;
+        color: var(--green);
+
+        transition: .3s;
+    }
+
+    .nav-full ul li a.current-page, .nav-full ul li a:hover
+    {
+        color: var(--lighter-green);
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

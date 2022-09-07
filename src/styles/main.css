@@ -52,6 +52,11 @@ main
     font-size: 4em;
 }
 
+.hidden
+{
+    display: none;
+}
+
 /* MOBILE FIRST STYLES */
 
 header, main, footer 
