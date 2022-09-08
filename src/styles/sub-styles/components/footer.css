@@ -43,12 +43,80 @@ footer .line
 footer .top 
 {
     margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer .top a, footer .top .share-us li 
+{
+    transition: .3s;
+}
+
+footer .top a:hover 
+{
+    color: var(--lighter-green);
+}
+
+footer .top .share-us li:hover 
+{
+    background-color: var(--lighter-green);
+}
+
+footer .top h1, footer .top h2
+{
+    margin-bottom: .7rem;
 }
 
 footer .bottom
 {
     text-align: center;
     font-size: .8em;
+}
+
+footer .share-us .links 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+footer .share-us .links li 
+{
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TRY TO CENTER THE ICON */
+/* footer .share-us .links li a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+footer .share-us .links li iconify-icon 
+{
+    color: var(--dark-green);
+    width: 1em;
+
+    /* to make the icon looks right at the middle */
+    margin-top: 3px;
+}
+
+footer .contact-us .links, footer .others .links 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
 }
 
 footer .bottom .credit
@@ -59,4 +127,49 @@ footer .bottom .credit
 footer .bottom .credit span 
 {
     font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    footer * 
+    {
+        text-align: left;
+    }
+
+    footer .copyright-credit *
+    {
+        text-align: center !important;
+    }
+
+    footer .top 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer h2 
+    {
+        font-size: 1.5em;
+    }
+
+    footer .line 
+    {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer .ozon-desktop
+    {
+        display: block;
+    }
+
+    footer .ozon-desktop h1 
+    {
+        color: var(--light-green);
+    }
+
+    footer .ozon-desktop p 
+    {
+        font-family: "Montserrat", sans-serif;
+    }
 }

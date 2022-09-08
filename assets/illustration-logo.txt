@@ -9,9 +9,16 @@
 <iconify-icon icon="clarity:close-line"></iconify-icon>
 
 <iconify-icon icon="akar-icons:whatsapp-fill"></iconify-icon>
+<i class="fa-brands fa-whatsapp"></i>
+
 <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+<i class="fa-brands fa-twitter"></i>
+
 <iconify-icon icon="bxl:telegram"></iconify-icon>
+<i class="fa-brands fa-telegram"></i>
+
 <iconify-icon icon="bxs:share-alt"></iconify-icon>
+<i class="fa-regular fa-share-nodes"></i>
 
 <iconify-icon icon="akar-icons:google-contained-fill"></iconify-icon>
 <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
