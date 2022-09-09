@@ -3,6 +3,7 @@
 
 @import "./sub-styles/components/header.css";
 @import "./sub-styles/components/footer.css";
+@import "./sub-styles/sign.css";
 
 :root {
     --black: #333;
@@ -50,8 +51,8 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    font-size: 4em;
+    /* font-weight: bold; */
+    /* font-size: 4em; */
 }
 
 .hidden
