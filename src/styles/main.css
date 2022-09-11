@@ -4,6 +4,7 @@
 @import "./sub-styles/components/header.css";
 @import "./sub-styles/components/footer.css";
 @import "./sub-styles/sign.css";
+@import "./sub-styles/profile.css";
 
 :root {
     --black: #333;
@@ -50,6 +51,7 @@ main
 
     /* TEMPORARY */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* font-weight: bold; */
@@ -131,6 +133,34 @@ body.loading
 header, main, footer 
 {
     padding: 0 2.1rem;
+}
+
+.page-location 
+{
+    align-self: flex-start;
+
+    position: absolute;
+    top: 120px;
+
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.page-location * 
+{
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.page-location .location 
+{
+    font-size: .8em;
+    color: var(--black);
+}
+
+.page-location .location:hover 
+{
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {

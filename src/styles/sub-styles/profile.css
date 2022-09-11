@@ -1,0 +1,132 @@
+main.profile 
+{
+    display: flex !important;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+
+    padding-top: 80px !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile .waves-bg
+{
+    width: 100%;
+    position: absolute;
+}
+
+.profile-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    width: 100%;
+    max-width: 320px;
+
+    position: relative;
+    margin-top: 2rem;
+}
+
+.profile-content .profile-pict 
+{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+
+    background-color: var(--black);
+}
+
+.profile-content .data-section 
+{
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.data-section .label 
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--lighter-green)
+}
+
+.data-section .information 
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.profile-content a 
+{
+    align-self: flex-end;
+
+    font-family: "Inter", sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+    color: var(--light-green);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 20px;
+    border: 1px solid var(--light-green);
+    border-radius: 4px;
+
+    transition: .3s;
+}
+
+.profile-content a:hover 
+{
+    opacity: .5;
+}
+
+.shared-blogs
+{
+    align-self: flex-start;
+}
+
+.shared-blogs h2 
+{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--light-green);
+}
+
+.shared-blogs .empty 
+{
+    font-size: 2em;
+    margin-top: 2rem;
+}
+
+.shared-blogs a 
+{
+    font-family: "Inter", sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--light-green);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    padding: 10px 20px;
+    margin-top: .5rem;
+    border-radius: 4px;
+
+    transition: .3s;
+}
+
+.shared-blogs a:hover 
+{
+    color: var(--light-green);
+    background: var(--white);
+
+    border: 1px solid var(--light-green);
+}
