@@ -31,12 +31,18 @@
 .sign-heading .title p
 {
     color: var(--darker-green);
-    font-size: .75em;
+    font-size: .85em;
 }
 
 .sign-heading .title p a
 {
     color: var(--orange);
+    transition: .3s;
+}
+
+.sign-heading .title p a:hover 
+{
+    opacity: .5;
 }
 
 .sign-heading .unknown-pp
@@ -122,9 +128,12 @@
     width: 100%;
     font-size: 1em;
     border: none;
+    outline: none;
     border-bottom: 1px solid var(--black);
     color: var(--black);
     transition: .3s;
+
+    font-family: "Montserrat", sans-serif;
 }
 
 .primary-sign .inputs .input input:focus,
@@ -142,11 +151,19 @@
     font-size: .9em;
 }
 
+.primary-sign .confirmation
+{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
 .primary-sign .confirmation .checkbox-text 
 {
-    font-size: .75em;
+    font-size: .85em;
     cursor: pointer;
     transition: .3s;
+    text-transform: capitalize;
 }
 
 .primary-sign .confirmation .checkbox-text:hover 
@@ -189,13 +206,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: .25rem;
 
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .secondary-sign .divider .line 
 {
-    width: 46%;
+    width: 48%;
     height: 1px;
     background: var(--dark-gray);
 }
@@ -207,4 +225,61 @@
 }
 
 /* CONTINUE HERE (create the sign in section) */
+.secondary-sign .sign-alternatives ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
 
+.secondary-sign .sign-alternatives li 
+{
+    width: 30px;
+    height: 30px;
+    background: var(--green);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+
+.secondary-sign .sign-alternatives li:hover 
+{
+    background: var(--orange);
+}
+
+.secondary-sign .sign-alternatives ul li iconify-icon 
+{
+    color: var(--white);
+
+    /* to make the icon looks right at the middle */
+    margin-top: 4px;
+}
+
+@media screen and (min-width: 576px) {
+    .primary-sign .inputs
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .primary-sign .inputs .input 
+    {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sign-section
+    {
+        max-width: 656px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

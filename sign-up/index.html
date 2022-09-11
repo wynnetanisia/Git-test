@@ -9,15 +9,109 @@
     <link rel="stylesheet" href="../src/styles/main.css">
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script defer src="../src/scripts/main.js"></script>
+
+    <style>
+
+        .sign-content 
+        {
+            flex-direction: column-reverse !important;
+        }
+
+        .secondary-sign 
+        {
+            flex-direction: column-reverse;
+        }
+
+        .input-email
+        {
+            width: 100% !important;
+        }
+
+    </style>    
 </head>
-<body>
+<body class="loading">
+
+    <div class="loaderContainer">
+        <div class="loader">
+            <div class="loader-dot dot1 w-4 h-4 transform bg-my-black rounded-full"></div>
+            <div class="loader-dot dot2 w-4 h-4 transform bg-my-black rounded-full"></div>
+            <div class="loader-dot dot3 w-4 h-4 transform bg-my-black rounded-full"></div>
+        </div>
+    </div>
     
     <header class="header header-temp">
         <h1 class="ozon-logo">Ozon</h1>
     </header>
 
     <main>
-        SIGN UP
+        <div class="sign-section">     
+            <div class="sign-heading">
+                <div class="title">
+                    <h1>Sign Up</h1>
+                    <p>Already have an account? <a href="../sign-in/">Sign In</a></p>
+                </div>
+
+            </div>
+    
+            <div class="sign-content">
+                <form action="" class="primary-sign">
+                    <div class="inputs">
+                        <div class="input input-email">
+                            <input required type="text">
+                            <span class="placeholder">Email</span>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input input-username">
+                            <input required type="text">
+                            <span class="placeholder">Username</span>
+                        </div>
+        
+                        <div class="input input-password">
+                            <input required type="password">
+                            <span class="placeholder">Password</span>
+                        </div>
+                    </div>
+        
+                    <div class="confirmation">
+                        <input id="checkbox-confirm" type="checkbox">
+                        <label for="checkbox-confirm" class="checkbox-text">I agree the terms or use and privacy policy.</label>
+                    </div>
+        
+                    <!-- after click, goes to /main page -->
+                    <!-- <a href="../main/" class="signButton">Sign In</a> -->
+                    <input type="submit" onclick="location.href='/main'" value="Sign Up" class="signButton">
+                </form>
+    
+                <div class="secondary-sign">
+                    <div class="divider">
+                        <div class="line"></div>
+                        <span>Or</span>
+                        <div class="line"></div>
+                    </div>
+    
+                    <div class="sign-alternatives">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://google.com">
+                                    <iconify-icon width="20" icon="akar-icons:google-fill"></iconify-icon> 
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://facebook.com">
+                                    <iconify-icon width="10" icon="brandico:facebook"></iconify-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://linkedin.com">
+                                    <iconify-icon width="20" icon="akar-icons:linkedin-fill"></iconify-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>

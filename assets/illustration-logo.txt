@@ -21,5 +21,10 @@
 <i class="fa-regular fa-share-nodes"></i>
 
 <iconify-icon icon="akar-icons:google-contained-fill"></iconify-icon>
+<iconify-icon icon="akar-icons:google-fill"></iconify-icon> 
+
 <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+<iconify-icon icon="bxl:facebook"></iconify-icon>
+
 <iconify-icon icon="entypo-social:linkedin-with-circle"></iconify-icon>
+<iconify-icon icon="akar-icons:linkedin-fill"></iconify-icon>

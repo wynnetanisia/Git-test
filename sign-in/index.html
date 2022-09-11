@@ -10,7 +10,15 @@
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script defer src="../src/scripts/main.js"></script>
 </head>
-<body>
+<body class="loading">
+
+    <div class="loaderContainer">
+        <div class="loader">
+            <div class="loader-dot dot1 w-4 h-4 transform bg-my-black rounded-full"></div>
+            <div class="loader-dot dot2 w-4 h-4 transform bg-my-black rounded-full"></div>
+            <div class="loader-dot dot3 w-4 h-4 transform bg-my-black rounded-full"></div>
+        </div>
+    </div>
     
     <header class="header header-temp">
         <h1 class="ozon-logo">Ozon</h1>
@@ -51,7 +59,8 @@
                     </div>
         
                     <!-- after click, goes to /main page -->
-                    <a href="../main/" class="signButton">Sign In</a>
+                    <!-- <a href="../main/" class="signButton">Sign In</a> -->
+                    <input type="submit" onclick="location.href='/main'" value="Sign In" class="signButton">
                 </form>
     
                 <div class="secondary-sign">
@@ -62,20 +71,23 @@
                     </div>
     
                     <div class="sign-alternatives">
-                        <!-- Google -->
-                        <a href="">
-                            <iconify-icon icon="akar-icons:google-contained-fill"></iconify-icon>
-                        </a>
-    
-                        <!-- Facebook -->
-                        <a href="">
-                            <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
-                        </a>
-    
-                        <!-- Linkedin -->
-                        <a href="">
-                            <iconify-icon icon="entypo-social:linkedin-with-circle"></iconify-icon>
-                        </a>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://google.com">
+                                    <iconify-icon width="20" icon="akar-icons:google-fill"></iconify-icon> 
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://facebook.com">
+                                    <iconify-icon width="10" icon="brandico:facebook"></iconify-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://linkedin.com">
+                                    <iconify-icon width="20" icon="akar-icons:linkedin-fill"></iconify-icon>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
