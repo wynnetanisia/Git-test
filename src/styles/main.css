@@ -5,6 +5,7 @@
 @import "./sub-styles/components/footer.css";
 @import "./sub-styles/sign.css";
 @import "./sub-styles/profile.css";
+@import "./sub-styles/gallery.css";
 
 :root {
     --black: #333;
@@ -130,7 +131,7 @@ body.loading
 
 /* MOBILE FIRST STYLES */
 
-header, main, footer 
+header, main, footer, #lightbox-container 
 {
     padding: 0 2.1rem;
 }
@@ -164,14 +165,14 @@ header, main, footer
 }
 
 @media screen and (min-width: 768px) {
-    header, main, footer 
+    header, main, footer, #lightbox-container 
     {
         padding: 0 3rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    header, main, footer 
+    header, main, footer, #lightbox-container
     {
         padding: 0 4rem;
     }

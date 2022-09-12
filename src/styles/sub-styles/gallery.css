@@ -1,0 +1,149 @@
+:root 
+{
+    --image-gap: .8rem;
+}
+
+.gallery-container
+{
+    margin-top: 180px;
+    margin-bottom: 4rem;
+}
+
+.gallery-container img 
+{
+    width: 100%;
+    object-fit: cover;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.gallery-container img:hover 
+{
+    opacity: .7;
+}
+
+#picsContainerMobile
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--image-gap);
+}
+
+#picsContainerTablet, 
+#picsContainerDesktop
+{
+    display: none;
+}
+
+#lightbox-container
+{
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: rgba(0,0,0,.8);
+    transition: .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* opacity: 1;
+    pointer-events: initial;
+    user-select: auto; */
+
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+#lightbox-container #lightbox 
+{
+    width: 100%;
+    max-width: 420px;
+    max-height: 70%;
+    background: var(--white);
+    color: var(--black);
+
+    padding: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lightbox img 
+{
+    width: 100%;
+}
+
+#lightbox .close
+{
+    align-self: flex-end;
+    position: relative;
+    right: -.25rem;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#lightbox .close:hover 
+{
+    opacity: .7;
+}
+
+#lightbox .caption 
+{
+    display: flex;
+    align-items: center;
+
+    gap: .25rem;
+    margin: .5rem 0;
+}
+
+@media screen and (min-width: 640px)
+{
+    #picsContainerMobile
+    {
+        display: none;
+    }
+
+    #picsContainerTablet
+    {
+        display: flex;
+        gap: var(--image-gap);
+    }
+
+    #picsContainerTablet .col-1, 
+    #picsContainerTablet .col-2
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--image-gap);
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    #picsContainerTablet
+    {
+        display: none;
+    }
+
+    #picsContainerDesktop 
+    {
+        display: flex;
+        gap: var(--image-gap);
+    }
+
+    #picsContainerDesktop .col-1,
+    #picsContainerDesktop .col-2,
+    #picsContainerDesktop .col-3
+    {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--image-gap);
+    }
+}
