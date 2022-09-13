@@ -128,6 +128,7 @@ for(var i = minImageNumber; i <= maxImageNumber; i++)
 // // LIGHTBOX LOGIC
 
 const lightboxContainer = document.querySelector("#lightbox-container")
+const body = document.querySelector("body")
 
 // Closing the Lightbox
 const closeLightboxBtn = document.querySelector("#lightbox .close")
@@ -136,6 +137,7 @@ if(closeLightboxBtn && lightboxContainer)
     closeLightboxBtn.addEventListener("click", () => {
 
         lightboxContainer.classList.add("closed")
+        body.classList.remove("overflow-hidden")
     })
 }
 
@@ -149,6 +151,7 @@ const openLightbox = (imageIndex) => {
     currentImageNumber.innerHTML = imageIndex
     totalImageNumber.innerHTML = maxImageNumber
 
+    body.classList.add("overflow-hidden")
     lightboxContainer.classList.remove("closed")
 }
 

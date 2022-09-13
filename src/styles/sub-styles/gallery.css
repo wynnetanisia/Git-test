@@ -58,6 +58,11 @@
     user-select: none;
 }
 
+body.overflow-hidden
+{
+    overflow: hidden !important;
+}
+
 #lightbox-container #lightbox 
 {
     width: 100%;
