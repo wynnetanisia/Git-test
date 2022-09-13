@@ -48,90 +48,12 @@ for(var i = minImageNumber; i <= maxImageNumber; i++)
     else console.error("ERR : while generating image (desktop gallery)")
 }
 
-// // LIGHTBOX LOGIC
-// const child = document.querySelectorAll(".child")
-// const body = document.querySelector('body')
-// const lightBoxTitle = document.querySelector(".lightboxTitle")
-// const lightBox = document.querySelector(".lightbox")
-// const lightBoxDisplay = document.querySelector('#display')
-
-// // initial image number
-// var activeImageIndex
-
-// // display the lightbox
-// function displayLightbox (imageIndex) 
-// {
-//     activeImageIndex = imageIndex
-//     changeImage(activeImageIndex)
-
-//     // open the lightbox    
-//     lightBox.style.display = "flex"
-//     body.style.overflow = "hidden"
-// }
-
-// // close the lightbox
-// function closeLightbox () 
-// {
-//     var displayedImage = document.querySelector("#displayedImage")
-//     displayedImage.remove()
-//     lightBox.style.display = "none"
-//     body.style.overflow = "auto"
-// }
-
-// // add or change the image that displayed on the lightbox
-// function changeImage(currentIndex)
-// {
-//     var imageSrc = "../assets/img4/" + currentIndex + ".jpg"
-//     var img = document.createElement("img")
-//     img.id = "displayedImage"
-//     img.src = imageSrc 
-//     lightBoxDisplay.appendChild(img)
-//     var title = "Gambar ke-" + currentIndex + " dari " + maxImageNumber
-//     lightBoxTitle.innerHTML = title
-// }
-
-// // for the onclick next image button
-// function nextImage ()
-// {
-//     // reset the image that displayed before
-//     var displayedImage = document.querySelector("#displayedImage")
-//     displayedImage.remove()
-
-//     // increase the index
-//     activeImageIndex++
-
-//     // check how big is the activeImageIndex
-//     if (activeImageIndex > maxImageNumber) 
-//     {
-//         activeImageIndex = minImageNumber
-//         changeImage(activeImageIndex)
-//     } else changeImage(activeImageIndex)
-// }
-
-// // for the onclick previous image button
-// function previousImage ()
-// {
-//     // reset the image that displayed before
-//     var displayedImage = document.querySelector("#displayedImage")
-//     displayedImage.remove()
-
-//     // decrease the index
-//     activeImageIndex--
-
-//     // check how big is the activeImageIndex
-//     if (activeImageIndex < minImageNumber) 
-//     {
-//         activeImageIndex = maxImageNumber
-//         changeImage(activeImageIndex)
-//     } else changeImage(activeImageIndex)
-// }
-// // LIGHTBOX LOGIC
-
+// LIGHTBOX
 const lightboxContainer = document.querySelector("#lightbox-container")
 const body = document.querySelector("body")
 
 // Closing the Lightbox
-const closeLightboxBtn = document.querySelector("#lightbox .close")
+const closeLightboxBtn = document.querySelector("#lightbox-container .close")
 if(closeLightboxBtn && lightboxContainer)
 {
     closeLightboxBtn.addEventListener("click", () => {
@@ -144,12 +66,6 @@ if(closeLightboxBtn && lightboxContainer)
 // Opening the Lightbox
 const openLightbox = (imageIndex) => {
     switchImage(imageIndex)
-    
-    var currentImageNumber = document.querySelector("#lightbox .imageNumber .current")
-    var totalImageNumber = document.querySelector("#lightbox .imageNumber .totalNumber")
-
-    currentImageNumber.innerHTML = imageIndex
-    totalImageNumber.innerHTML = maxImageNumber
 
     body.classList.add("overflow-hidden")
     lightboxContainer.classList.remove("closed")
@@ -158,12 +74,30 @@ const openLightbox = (imageIndex) => {
 // Switching the Lightbox Image
 const switchImage = (imageIndex) => {
     var newSrc = `../../assets/pictures/blog-pics/${imageIndex}.jpg`
+    var currentImageNumber = document.querySelector("#lightbox-container .imageNumber .current")
+    var totalImageNumber = document.querySelector("#lightbox-container .imageNumber .totalNumber")
 
     const lightboxImage = document.querySelector("#lightbox-container #lightbox img")
     lightboxImage.src = newSrc
+    lightboxImage.id = imageIndex
+
+    currentImageNumber.innerHTML = imageIndex
+    totalImageNumber.innerHTML = maxImageNumber
 }
 
-// CONTINUE HERE
-// const nextImage = (currentImageIndex) => {
-//     switchImage(currentImageIndex + 1)
-// } 
+// Next and Previous Image button
+const nextImage = (currentImageIndex) => {
+    if(+currentImageIndex + 1 > maxImageNumber)
+    {
+        switchImage(1)
+    } 
+    else switchImage(+currentImageIndex + 1)
+
+} 
+const prevImage = (currentImageIndex) => {
+    if(+currentImageIndex - 1 < minImageNumber)
+    {
+        switchImage(maxImageNumber)
+    }
+    else switchImage(+currentImageIndex - 1)
+}

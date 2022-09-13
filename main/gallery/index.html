@@ -80,21 +80,19 @@
     <div id="lightbox-container" class="closed">
         <div id="lightbox">
             <div class="close">
-                <iconify-icon width="28" icon="clarity:close-line" class="close"></iconify-icon>
+                <iconify-icon width="30" icon="clarity:close-line" class="close"></iconify-icon>
             </div>
-            <img src="../../assets/pictures/blog-pics/1.jpg" alt="Our World and The Future Picture">
-            <div class="caption">
-                <div class="prev">
-                    <iconify-icon width="24" icon="akar-icons:chevron-left"></iconify-icon>
-                </div>
-                <!-- <iconify-icon class="prev" width="30" icon="ant-design:caret-left-filled"></iconify-icon> -->
-                <div class="imageNumber">
-                    <span class="current">1</span>/<span class="totalNumber">12</span>
-                </div>
-                <div class="next">
-                    <iconify-icon width="24" icon="akar-icons:chevron-right"></iconify-icon>
-                </div>
-                <!-- <iconify-icon class="next" width="30" icon="ant-design:caret-right-filled"></iconify-icon> -->
+            <img id="1" src="../../assets/pictures/blog-pics/1.jpg" alt="Our World and The Future Picture">
+        </div>
+        <div class="caption">
+            <div class="prev" onclick="prevImage(this.parentElement.parentElement.querySelector('img').id)">
+                <iconify-icon width="26" icon="akar-icons:chevron-left"></iconify-icon>
+            </div>
+            <div class="imageNumber">
+                <span class="current">1</span>/<span class="totalNumber">12</span>
+            </div>
+            <div class="next" onclick="nextImage(this.parentElement.parentElement.querySelector('img').id)">
+                <iconify-icon width="26" icon="akar-icons:chevron-right"></iconify-icon>
             </div>
         </div>
     </div>
