@@ -13,7 +13,7 @@ const generateImage = (index, device) => {
     img.src = imgSrc
     img.id = index
     img.alt = imgAlt
-    // img.setAttribute("onclick", "openTouchSlider(this.id)")
+    img.setAttribute("onclick", "openLightbox(this.id)")
     
     // what type is the device
     if(device === "mobile") picsContainerMobile.appendChild(img)
@@ -25,8 +25,8 @@ const generateImage = (index, device) => {
     else console.error("ERR : unknown device argument generateImage()")
 }
 
-var minImageNumber = 1 
-var maxImageNumber = 12
+const minImageNumber = 1 
+const maxImageNumber = 12
 
 // mobile gallery 
 for(var i = minImageNumber; i <= maxImageNumber; i++) generateImage(i, "mobile")
@@ -126,3 +126,41 @@ for(var i = minImageNumber; i <= maxImageNumber; i++)
 //     } else changeImage(activeImageIndex)
 // }
 // // LIGHTBOX LOGIC
+
+const lightboxContainer = document.querySelector("#lightbox-container")
+
+// Closing the Lightbox
+const closeLightboxBtn = document.querySelector("#lightbox .close")
+if(closeLightboxBtn && lightboxContainer)
+{
+    closeLightboxBtn.addEventListener("click", () => {
+
+        lightboxContainer.classList.add("closed")
+    })
+}
+
+// Opening the Lightbox
+const openLightbox = (imageIndex) => {
+    switchImage(imageIndex)
+    
+    var currentImageNumber = document.querySelector("#lightbox .imageNumber .current")
+    var totalImageNumber = document.querySelector("#lightbox .imageNumber .totalNumber")
+
+    currentImageNumber.innerHTML = imageIndex
+    totalImageNumber.innerHTML = maxImageNumber
+
+    lightboxContainer.classList.remove("closed")
+}
+
+// Switching the Lightbox Image
+const switchImage = (imageIndex) => {
+    var newSrc = `../../assets/pictures/blog-pics/${imageIndex}.jpg`
+
+    const lightboxImage = document.querySelector("#lightbox-container #lightbox img")
+    lightboxImage.src = newSrc
+}
+
+// CONTINUE HERE
+// const nextImage = (currentImageIndex) => {
+//     switchImage(currentImageIndex + 1)
+// } 

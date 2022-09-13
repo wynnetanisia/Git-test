@@ -77,16 +77,24 @@
         </div>
     </main>
 
-    <div id="lightbox-container">
+    <div id="lightbox-container" class="closed">
         <div id="lightbox">
-            <iconify-icon width="28" icon="clarity:close-line" class="close"></iconify-icon>
-            <img src="../../assets/pictures/blog-pics/1.jpg" alt="">
+            <div class="close">
+                <iconify-icon width="28" icon="clarity:close-line" class="close"></iconify-icon>
+            </div>
+            <img src="../../assets/pictures/blog-pics/1.jpg" alt="Our World and The Future Picture">
             <div class="caption">
-                <iconify-icon class="prev" width="30" icon="ant-design:caret-left-filled"></iconify-icon>
-                <div class="imageNumber">
-                    <span class="current">1</span><span class="totalNumber">/12</span>
+                <div class="prev">
+                    <iconify-icon width="24" icon="akar-icons:chevron-left"></iconify-icon>
                 </div>
-                <iconify-icon class="next" width="30" icon="ant-design:caret-right-filled"></iconify-icon>
+                <!-- <iconify-icon class="prev" width="30" icon="ant-design:caret-left-filled"></iconify-icon> -->
+                <div class="imageNumber">
+                    <span class="current">1</span>/<span class="totalNumber">12</span>
+                </div>
+                <div class="next">
+                    <iconify-icon width="24" icon="akar-icons:chevron-right"></iconify-icon>
+                </div>
+                <!-- <iconify-icon class="next" width="30" icon="ant-design:caret-right-filled"></iconify-icon> -->
             </div>
         </div>
     </div>

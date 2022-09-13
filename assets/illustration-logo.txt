@@ -4,6 +4,7 @@
 
 <iconify-icon icon="ant-design:star-filled"></iconify-icon>
 <iconify-icon icon="ant-design:caret-right-filled"></iconify-icon>
+<iconify-icon icon="akar-icons:chevron-right"></iconify-icon>
 <iconify-icon icon="bi:image-fill"></iconify-icon>
 <iconify-icon icon="clarity:copy-line"></iconify-icon>
 <iconify-icon icon="clarity:close-line"></iconify-icon>
