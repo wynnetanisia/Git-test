@@ -1,0 +1,74 @@
+.newBlog-container 
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    margin-top: 2rem;
+}
+
+.newBlog-container * 
+{
+    font-family: "Inter", sans-serif;
+}
+
+.newBlog-container > input[type="text"],
+.newBlog-container > textarea 
+{
+    outline: none;
+    border: none;
+    border-left: 2px solid var(--dark-gray);
+
+    width: 100%;
+    padding: .5rem;
+}
+
+.newBlog-container > .title 
+{
+    font-size: 1em;
+    font-weight: 700;
+
+    color: var(--black);
+}
+
+.newBlog-container > .context
+{
+    font-size: .85em;
+    font-weight: 700;
+
+    color: var(--dark-gray);
+}
+
+.newBlog-container > textarea.content 
+{
+    font-size: .75em;
+
+    color: var(--black);
+
+    min-height: 300px;
+}
+
+.newBlog-container .input-image 
+{
+    height: 120px;
+    border: 1px dashed var(--dark-gray);
+
+    cursor: pointer;
+}
+
+.newBlog-container .input-image input[type="file"]
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* Try to add more space between the page marker and the newBlog-container */
+@media screen and (max-height: 875px)
+{
+    .newBlog-container 
+    {
+        /* margin-top: rem; */
+    }
+}

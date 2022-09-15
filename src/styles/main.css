@@ -6,6 +6,7 @@
 @import "./sub-styles/sign.css";
 @import "./sub-styles/profile.css";
 @import "./sub-styles/gallery.css";
+@import "./sub-styles/new-blog.css";
 
 :root {
     --black: #333;

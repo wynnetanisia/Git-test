@@ -61,8 +61,22 @@
             <iconify-icon class="right-arrow" icon="ant-design:caret-right-filled"></iconify-icon>
             <a href="./" class="location">New Blog</a> 
         </div>
-
-        NEW BLOG
+        <form class="newBlog-container">
+            <input type="text" placeholder="Title" class="title">
+            <input type="text" placeholder="Context" class="context">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Here. . ." class="content"></textarea>
+            <!-- <input type="text" placeholder="Write Here. . ." class="content"> -->
+            <div class="input-image">
+                <!-- <div class="img-icon"></div> -->
+                <iconify-icon icon="bi:image-fill" class="img-icon"></iconify-icon>
+                <div class="text">
+                    Drop your image here, or <span>browse</span>
+                </div>
+                <input type="file" accept="image/*" value="Image Input">
+            </div>
+            <input type="submit" value="Upload Blog">
+        </form>
+        
     </main>
 
     <footer>
