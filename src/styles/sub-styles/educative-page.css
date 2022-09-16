@@ -1,0 +1,90 @@
+.edpage-title 
+{
+    font-size: 1.4em;
+    color: var(--dark-green);
+
+    font-family: "Inter", sans-serif
+}
+
+.edpage-container 
+{
+    font-family: "Inter", sans-serif;
+}
+
+.edpage-container h2 
+{
+    font-size: 1.2em;
+    color: var(--light-green);
+}
+
+.edpage-container p 
+{
+    margin-top: .5rem;
+}
+
+.edpage-container p a 
+{
+    font-weight: 700;
+    color: var(--green);
+
+    transition: .3s;
+}
+
+.edpage-container p a:hover 
+{
+    color: var(--light-green);
+}
+
+.edpage-container .group 
+{
+    margin-top: 1.2rem;
+}
+
+.edpage-container .group.group-image 
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.edpage-container .group.group-image .imgContainer
+{
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.edpage-container .group.group-image img 
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: .5s;
+    cursor: zoom-in;
+}
+
+.edpage-container .group.group-image img:hover 
+{
+    transform: scale(1.5);
+}
+
+@media screen and (min-width: 640px)
+{
+    .edpage-container .group.group-image 
+    {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .edpage-container .group.group-image .imgContainer
+    {
+        width: 33.33%;
+    }
+}

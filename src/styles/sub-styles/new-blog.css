@@ -5,8 +5,6 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
-
-    margin-top: 2rem;
 }
 
 .newBlog-container * 
@@ -27,7 +25,7 @@
 
 .newBlog-container > .title 
 {
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 700;
 
     color: var(--black);
@@ -35,15 +33,15 @@
 
 .newBlog-container > .context
 {
-    font-size: .85em;
+    font-size: 1.2em;
     font-weight: 700;
 
-    color: var(--dark-gray);
+    color: var(--lighter-green);
 }
 
 .newBlog-container > textarea.content 
 {
-    font-size: .75em;
+    font-size: .9em;
 
     color: var(--black);
 
@@ -56,19 +54,42 @@
     border: 1px dashed var(--dark-gray);
 
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.newBlog-container .input-image * 
+{
+    color: var(--gray);
 }
 
 .newBlog-container .input-image input[type="file"]
 {
     width: 100%;
     height: 100%;
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    cursor: pointer;
 }
 
-/* Try to add more space between the page marker and the newBlog-container */
-@media screen and (max-height: 875px)
+.newBlog-container .input-image .text span 
 {
-    .newBlog-container 
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px)
+{
+    .newBlog-container a.primary-btn
     {
-        /* margin-top: rem; */
+        width: 145px;
+        align-self: flex-end;
     }
 }

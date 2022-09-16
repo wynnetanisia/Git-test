@@ -2,9 +2,9 @@ main.profile
 {
     display: flex !important;
     flex-direction: column;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
 
-    padding-top: 80px !important;
+    /* padding-top: 80px !important; */
     font-family: "Montserrat", sans-serif;
 }
 
