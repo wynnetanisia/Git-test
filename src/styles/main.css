@@ -8,6 +8,8 @@
 @import "./sub-styles/gallery.css";
 @import "./sub-styles/new-blog.css";
 @import "./sub-styles/educative-page.css";
+@import "./sub-styles/index-temporary.css";
+@import "./sub-styles/index.css";
 
 :root {
     --black: #333;
@@ -202,7 +204,7 @@ body.loading
 
 /* MOBILE FIRST STYLES */
 
-header, main, footer, #lightbox-container 
+header, main, footer, #lightbox-container, .image-background 
 {
     padding: 0 2.1rem;
 }
@@ -238,14 +240,14 @@ header, main, footer, #lightbox-container
 }
 
 @media screen and (min-width: 768px) {
-    header, main, footer, #lightbox-container 
+    header, main, footer, #lightbox-container, .image-background
     {
         padding: 0 3rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    header, main, footer, #lightbox-container
+    header, main, footer, #lightbox-container, .image-background
     {
         padding: 0 4rem;
     }
