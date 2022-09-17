@@ -10,6 +10,7 @@
 @import "./sub-styles/educative-page.css";
 @import "./sub-styles/index-temporary.css";
 @import "./sub-styles/index.css";
+@import "./sub-styles/blogs.css";
 
 :root {
     --black: #333;

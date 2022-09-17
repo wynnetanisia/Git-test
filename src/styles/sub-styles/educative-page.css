@@ -20,6 +20,7 @@
 .edpage-container p 
 {
     margin-top: .5rem;
+    text-align: justify;
 }
 
 .edpage-container p a 
@@ -88,3 +89,40 @@
         width: 33.33%;
     }
 }
+/* 
+@media screen and (min-width: 1024px)
+{
+    .edpage-container
+    {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .edpage-container .group-text 
+    {
+        width: 60%;
+    }
+
+    .edpage-container .group-image 
+    {
+        width: 40% !important;
+        flex-direction: row !important;
+    }
+
+    .edpage-container .group-image .imgContainer
+    {
+        width: 100% !important;
+    }
+
+    .edpage-container .group.group-image 
+    {
+        flex-direction: column !important;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .edpage-container .group.group-image .imgContainer
+    {
+        width: 100%;
+    }
+} */

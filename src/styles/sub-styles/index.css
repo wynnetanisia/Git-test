@@ -1,0 +1,100 @@
+.image-background.main
+{
+    height: 100vh !important;
+}
+
+main#main 
+{
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-top: 0 !important;
+}
+
+main#main > *
+{
+    margin-top: 100px;
+}
+
+main#main > .data-stats
+{
+    margin-top: 2rem !important;
+}
+
+main#main .about-us .section
+{
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main#main .about-us .section > * 
+{
+    /* width: 50%; */
+    width: 100%;
+}
+
+main#main .about-us h2 
+{
+    font-size: 1em;
+    color: var(--light-green);
+    margin-bottom: .5rem;
+}
+
+main#main .about-us p 
+{
+    text-align: justify;
+
+    font-size: .9em;
+}
+
+main#main .data-stats
+{
+    color: var(--light-green);
+    font-family: "Inter", sans-serif;
+
+    /* margin: 2.rem 0; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.data-stats .data 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-stats .number 
+{
+    font-weight: 700;
+
+    font-size: 1.2em;
+}
+
+.data-stats .title 
+{
+    color: var(--light-green);
+}
+
+@media screen and (min-width: 768px)
+{
+    main#main .about-us .section
+    {
+        flex-direction: row;
+    }
+
+    main#main .data-stats
+    {
+        gap: 5rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

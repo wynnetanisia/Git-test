@@ -1,4 +1,4 @@
-.image-background.temporary
+.image-background
 {
     padding-top: 80px !important;
 
@@ -36,20 +36,20 @@
     }
 }
 
-.image-background.temporary h1 
+.image-background h1 
 {
     font-weight: 200;
     text-align: center;
 }
 
-.image-background.temporary p 
+.image-background p 
 {
     font-size: .8em;
     font-weight: 300;
     text-align: center;
 }
 
-.image-background.temporary .secondary-btn 
+.image-background .secondary-btn 
 {
     font-family: "Montserrat", sans-serif !important;
     font-size: 1em;
@@ -73,10 +73,11 @@ main.temporary
 
 }
 
-main.temporary .trending-blogs h1
+main .trending-blogs h1,
+main .about-us h1
 {
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: left;
 }
 
@@ -106,19 +107,24 @@ main.temporary .sign-more a:hover
 {
     width: 100%;
 
-    max-width: 768px;
+    /* max-width: 768px;
 
     border: 1px solid var(--gray);
-    padding: 2rem;
+    padding: 2rem 1rem; */
 }
 
 .blogs-container
 {
     display: flex;
     flex-direction: column;
-    gap: .9rem;
+    gap: 1.1rem;
 
     margin-top: 2rem;
+}
+
+.blogs-container * 
+{
+    font-family: "Inter";
 }
 
 .blogs-container .blog 
@@ -286,12 +292,21 @@ main.temporary .sign-more a:hover
 }
 
 @media screen and (min-width: 1024px) {
-    .blogs-container .blog .information 
+    .trending-blogs
     {
+        /* padding: 2rem; */
     }
 
     .blogs-container .blog .blog-image
     {
         max-height: 120px;
+    }
+}
+
+@media screen and (min-width: 1280px)
+{
+    .image-background.temporary
+    {
+        height: 450px;
     }
 }
