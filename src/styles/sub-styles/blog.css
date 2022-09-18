@@ -1,0 +1,289 @@
+.blog-container 
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog-container * 
+{
+    font-family: "Inter", sans-serif;
+}
+
+.blog-container .information 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog-container .header 
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.blog-container .header .profile-pict 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.blog-container .header .username 
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.blog-container .title-context h1
+{
+    font-size: 1.4em;
+    color: var(--dark-green);
+}
+
+.blog-container .title-context h2
+{
+    font-size: 1.2em;
+    color: var(--lighter-green);
+}
+
+.blog-container .detail-stats
+{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.blog-container .detail-stats * 
+{
+    color: var(--dark-gray);
+    font-size: .9em;
+}
+
+.blog-container .detail-stats iconify-icon 
+{
+    color: var(--orange);
+
+    margin-bottom: -2.5px;
+}
+
+.blog-content 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog-content .sub-heading 
+{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--black);
+    margin-bottom: .25rem;
+}
+
+.blog-content p
+{
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.blog-container .share-btn 
+{
+    width: fit-content;
+
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+
+    padding: .5rem;
+
+    color: var(--white);
+    background: var(--orange);
+    font-weight: 700;
+    font-size: 1em;
+
+    outline: none;
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.blog-container .share-btn:hover 
+{
+    opacity: .5;
+}
+
+/* SHARE OVERLAY */
+.share-overlay 
+{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* initial style */
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.share-overlay.opened 
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.share-overlay * { font-family: "Inter", sans-serif; }
+
+.share-overlay .share-card
+{
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+
+    min-width: 230px;
+}
+
+.share-overlay .share-card .heading 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share-overlay .heading 
+{
+    margin-bottom: 1.5rem;
+}
+
+.share-overlay .heading h1 
+{
+    font-size: 1.2em;
+}
+
+.share-overlay .heading iconify-icon 
+{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.share-overlay .heading iconify-icon:hover 
+{
+    opacity: .5;
+}
+
+.share-overlay .share-group 
+{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.share-overlay .share-group * 
+{
+    color: var(--dark-green);
+}
+
+.share-overlay .share-group > * 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-overlay .share-group .share:hover .icon 
+{
+    background: var(--orange);
+}
+.share-overlay .share-group .share:hover .name 
+{
+    color: var(--orange);
+}
+
+
+.share-overlay .share-group .icon 
+{
+    background: var(--dark-green);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .3s;
+}
+
+.share-overlay .share-group .icon iconify-icon {
+    color: var(--white);
+    /* margin-left: 1.5px; */
+}
+
+.share-overlay .share-group .name 
+{
+    font-weight: 500;
+    font-size: .8em;
+
+    transition: .3s;
+}
+
+.share-overlay .share-group .copy-link.copied .icon
+{
+    background-color: var(--light-green) !important;
+}
+.share-overlay .share-group .copy-link.copied .name 
+{
+    color: var(--light-green) !important;
+}
+
+/* .share-overlay .share-group .copy-link.copied:hover .icon
+{
+    background: var(--light-green) !important;
+}
+.share-overlay .share-group .copy-link.copied:hover .name 
+{
+    color: var(--light-green) !important;
+} */
+
+@media screen and (min-width: 768px)
+{
+    .blog-container .title-context h1
+    {
+        font-size: 1.6em;
+        color: var(--dark-green);
+    }
+    
+    .blog-container .title-context h2
+    {
+        font-size: 1.4em;
+        color: var(--lighter-green);
+    }
+    
+
+    .blog-content .sub-heading 
+    {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: var(--black);
+    }
+
+    .blog-content p
+    {
+        font-size: 1.1em;
+    }
+}
