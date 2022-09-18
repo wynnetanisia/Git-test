@@ -79,6 +79,8 @@ main .about-us h1
     font-weight: 700;
     font-size: 1.3em;
     text-align: left;
+
+    margin-bottom: 2rem;
 }
 
 main.temporary .sign-more 
@@ -119,7 +121,7 @@ main.temporary .sign-more a:hover
     flex-direction: column;
     gap: 1.1rem;
 
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .blogs-container * 
