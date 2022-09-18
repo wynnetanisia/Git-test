@@ -18,8 +18,16 @@ const copySiteLinkToClipboard = async () => {
 const copyLinkBtn = document.querySelector(".copy-link")
 if(copyLinkBtn)
 {
-    copyLinkBtn.addEventListener("click", async () => {
-        await copySiteLinkToClipboard()
+    copyLinkBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+
+        try {
+            await copySiteLinkToClipboard()
+
+            copyLinkBtn.classList.add("copied")
+        } catch (err) {
+            console.log("Clipboard error")
+        }
     })
 }
 
@@ -36,4 +44,6 @@ const closeShareBtn = document.querySelector(".close-share-overlay")
 closeShareBtn.addEventListener("click", () => {
     shareOverlay.classList.remove("opened")
     body.classList.remove("loading")
+
+    copyLinkBtn.classList.remove("copied")
 })

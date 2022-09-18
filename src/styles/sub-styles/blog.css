@@ -226,7 +226,7 @@
     align-items: center;
     justify-content: center;
 
-    transition: .3s;
+    transition: .75s;
 }
 
 .share-overlay .share-group .icon iconify-icon {
