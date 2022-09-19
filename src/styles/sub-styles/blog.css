@@ -79,9 +79,18 @@
     gap: 1rem;
 }
 
-.blog-content .sub-heading 
+.blog-content h2 
 {
     font-size: 1.2em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--black);
+    margin-bottom: .25rem;
+}
+
+.blog-content h3
+{
+    font-size: .9em;
     font-weight: 700;
     text-transform: capitalize;
     color: var(--black);
@@ -273,13 +282,17 @@
         font-size: 1.4em;
         color: var(--lighter-green);
     }
-    
 
-    .blog-content .sub-heading 
+    .blog-content h2 
     {
         font-size: 1.4em;
         font-weight: 700;
         color: var(--black);
+    }
+
+    .blog-content h3
+    {
+        font-size: 1.1em;
     }
 
     .blog-content p
