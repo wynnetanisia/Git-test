@@ -2,8 +2,15 @@
 {
     width: 100%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
 }
 
@@ -14,15 +21,24 @@
 
 .blog-container .information 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
 }
 
 .blog-container .header 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .5rem;
 }
 
@@ -31,7 +47,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .blog-container .header .username 
@@ -54,8 +71,13 @@
 
 .blog-container .detail-stats
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: .25rem;
 }
 
@@ -74,8 +96,13 @@
 
 .blog-content 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
 }
 
@@ -105,11 +132,19 @@
 
 .blog-container .share-btn 
 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .2rem;
 
     padding: .5rem;
@@ -124,6 +159,10 @@
     border-radius: 12px;
 
     cursor: pointer;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }
@@ -141,13 +180,23 @@
     background: rgba(0,0,0,.6);
     z-index: 999;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     /* initial style */
     opacity: 0;
     pointer-events: none;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -170,9 +219,15 @@
 
 .share-overlay .share-card .heading 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .share-overlay .heading 
@@ -188,6 +243,8 @@
 .share-overlay .heading iconify-icon 
 {
     cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -198,6 +255,8 @@
 
 .share-overlay .share-group 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 2.5rem;
 }
@@ -209,9 +268,16 @@
 
 .share-overlay .share-group > * 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .share-overlay .share-group .share:hover .icon 
@@ -223,7 +289,6 @@
     color: var(--orange);
 }
 
-
 .share-overlay .share-group .icon 
 {
     background: var(--dark-green);
@@ -231,9 +296,21 @@
     height: 38px;
     border-radius: 50%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    -webkit-transition: .75s;
+
+    -o-transition: .75s;
 
     transition: .75s;
 }
@@ -247,6 +324,10 @@
 {
     font-weight: 500;
     font-size: .8em;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }

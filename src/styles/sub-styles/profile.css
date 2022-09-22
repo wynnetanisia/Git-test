@@ -1,8 +1,15 @@
 main.profile 
 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 
     /* padding-top: 80px !important; */
     font-family: "Montserrat", sans-serif;
@@ -16,9 +23,16 @@ main.profile
 
 .profile-content
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 2.5rem;
 
     width: 100%;
@@ -39,10 +53,18 @@ main.profile
 
 .profile-content .data-section 
 {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
 
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1.5rem;
 }
 
@@ -62,20 +84,33 @@ main.profile
 
 .profile-content a 
 {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 
     font-family: "Inter", sans-serif;
     font-size: .9em;
     font-weight: 600;
     color: var(--light-green);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     padding: 10px 20px;
     border: 1px solid var(--light-green);
     border-radius: 4px;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }
@@ -87,7 +122,8 @@ main.profile
 
 .shared-blogs
 {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 }
 
 .shared-blogs h2 
@@ -112,13 +148,25 @@ main.profile
     color: var(--white);
     background: var(--light-green);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
 
     padding: 10px 20px;
     margin-top: .5rem;
     border-radius: 4px;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }

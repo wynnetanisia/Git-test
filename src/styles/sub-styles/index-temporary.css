@@ -5,33 +5,73 @@
     font-family: "Montserrat", sans-serif;
     color: var(--white);
 
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/6.jpg);
+
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/6.jpg);
+
     background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: changeBackgroundImage 10s infinite ease-in-out;
+    -webkit-animation: changeBackgroundImage 10s infinite ease-in-out;
+            animation: changeBackgroundImage 10s infinite ease-in-out;
 
     height: 300px;
     width: 100%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .3rem;
+}
+
+@-webkit-keyframes changeBackgroundImage {
+    0% 
+    {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/6.jpg);
+        background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/6.jpg);
+    }
+    50%
+    {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/9.jpg);
+        background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/9.jpg);
+    }
+    100%
+    {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/2.jpg);
+        background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/2.jpg);
+    }
 }
 
 @keyframes changeBackgroundImage {
     0% 
     {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/6.jpg);
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/6.jpg);
         background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/6.jpg);
     }
     50%
     {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/9.jpg);
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/9.jpg);
         background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/9.jpg);
     }
     100%
     {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../../../assets/pictures/blog-pics/2.jpg);
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/2.jpg);
         background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../../assets/pictures/blog-pics/2.jpg);
     }
 }
@@ -55,7 +95,9 @@
     font-size: 1em;
 
     margin-top: .75rem;
-    align-self: auto !important;
+    -ms-flex-item-align: auto !important;
+        -ms-grid-row-align: auto !important;
+        align-self: auto !important;
     font-weight: 400 !important;
 
     border-radius: 0;
@@ -87,7 +129,9 @@ main.temporary .sign-more
 {
     color: var(--red);
 
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+
+        align-self: flex-end;
     margin-top: 2rem;
 }
 
@@ -95,6 +139,10 @@ main.temporary .sign-more a
 {
     color: var(--red);
     text-decoration: underline;
+
+    -webkit-transition: opacity .3s;
+
+    -o-transition: opacity .3s;
 
     transition: opacity .3s;
 }
@@ -117,8 +165,13 @@ main.temporary .sign-more a:hover
 
 .blogs-container
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1.1rem;
 
     /* margin-top: 2rem; */
@@ -131,9 +184,18 @@ main.temporary .sign-more a:hover
 
 .blogs-container .blog 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: .5rem;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }
@@ -147,8 +209,15 @@ main.temporary .sign-more a:hover
 {
     width: 100%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: .5rem;
 }
 
@@ -157,14 +226,21 @@ main.temporary .sign-more a:hover
     width: 100%;
     max-height: 180px;
 
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 
 .blogs-container .information .header
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .25rem;
 }
 
@@ -173,8 +249,10 @@ main.temporary .sign-more a:hover
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 
 .blogs-container .information .header .username 
@@ -203,9 +281,15 @@ main.temporary .sign-more a:hover
 
 .blogs-container .information .detail-stats
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .blogs-container .information .detail-stats * 
@@ -237,14 +321,21 @@ main.temporary .sign-more a:hover
 {
     .blogs-container .blog 
     {
-        flex-direction: row;
-        align-items: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .blogs-container .blog .information 
     {
         width: 70%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .blogs-container .information .header .profile-pict 

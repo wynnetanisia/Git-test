@@ -2,15 +2,26 @@ main .content
 {
     width: 100%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 main .content .divider
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     margin: 2.5rem 0;
 }
@@ -42,7 +53,11 @@ main .content .primary-btn.create-blog
     {
         max-width: 300px;
 
-        align-self: center;
+        -ms-flex-item-align: center;
+
+            -ms-grid-row-align: center;
+
+            align-self: center;
     }
     
 }

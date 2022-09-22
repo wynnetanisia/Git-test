@@ -1,7 +1,12 @@
 .sign-section 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* align-items: center; */
     gap: 3rem;
 
@@ -10,9 +15,16 @@
 
 .sign-heading
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .sign-heading .title 
@@ -37,6 +49,8 @@
 .sign-heading .title p a
 {
     color: var(--orange);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -55,10 +69,21 @@
     overflow: hidden;
     position: relative;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .sign-heading .unknown-pp .head 
@@ -84,16 +109,26 @@
 .sign-content 
 {
     /* width: 100%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     font-family: "Montserrat", sans-serif;
 }
 
 .primary-sign 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
 }
 
@@ -113,6 +148,8 @@
 {
     font-size: 1em;
     color: var(--gray);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     text-transform: capitalize;
     cursor: pointer;
@@ -131,6 +168,8 @@
     outline: none;
     border-bottom: 1px solid var(--black);
     color: var(--black);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 
     font-family: "Montserrat", sans-serif;
@@ -153,8 +192,12 @@
 
 .primary-sign .confirmation
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .25rem;
 }
 
@@ -162,6 +205,8 @@
 {
     font-size: .85em;
     cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     text-transform: capitalize;
 }
@@ -184,6 +229,8 @@
     border-radius: 4px;
     color: var(--white);
     cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     text-align: center;
 }
@@ -197,15 +244,26 @@
 
 .secondary-sign
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .secondary-sign .divider 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: .25rem;
 
     margin: 1.5rem 0;
@@ -224,12 +282,17 @@
     color: var(--dark-gray);
 }
 
-/* CONTINUE HERE (create the sign in section) */
 .secondary-sign .sign-alternatives ul
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .8rem;
 }
 
@@ -240,9 +303,21 @@
     background: var(--green);
     border-radius: 50%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }
@@ -263,8 +338,12 @@
 @media screen and (min-width: 576px) {
     .primary-sign .inputs
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .primary-sign .inputs .input 
