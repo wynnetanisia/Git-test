@@ -28,3 +28,28 @@ window.addEventListener("scroll", () => {
 
     setTimeout(activateCount, 750)
 })
+
+// INTERSECTION OBSERVER (for heading)
+const header = document.querySelector("header.header.header-main");
+const navMobileBtn = document.querySelector("header.header.header-main .nav-toggle .bar")
+const sectionOne = document.querySelector(".image-background.main");
+
+const sectionOneOptions = { 
+    rootMargin : "-80px 0px 0px 0px"
+ }
+
+const sectionOneObserver = new IntersectionObserver(function(
+    entries, 
+    sectionOneObserver
+    ) {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                header.classList.remove("transparent")
+            }
+            else {
+                header.classList.add("transparent")
+            }
+        })
+}, sectionOneOptions)
+
+sectionOneObserver.observe(sectionOne)

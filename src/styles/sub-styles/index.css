@@ -1,3 +1,28 @@
+header.header.header-main.transparent 
+{
+    background: transparent;
+    border: none;
+
+    transition: .3s;
+}
+
+header.header.header-main.transparent * 
+{
+    color: var(--white);
+
+}
+
+header.header.header-main.transparent .nav-toggle .bar 
+{
+    background: var(--white);
+}
+
+header.header.header-main.transparent a.current-page,
+header.header.header-main.transparent a:hover 
+{
+    color: var(--lighter-green);
+}
+
 .image-background.main
 {
     height: 100vh !important;
