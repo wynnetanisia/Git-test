@@ -35,7 +35,9 @@ const navMobileBtn = document.querySelector("header.header.header-main .nav-togg
 const sectionOne = document.querySelector(".image-background.main");
 
 const sectionOneOptions = { 
-    rootMargin : "-80px 0px 0px 0px"
+    // rootMargin : "-80px 0px 0px 0px"
+    // rootMargin : "-500px 0px 0px 0px"
+    rootMargin : "-65% 0px 0px 0px"
  }
 
 const sectionOneObserver = new IntersectionObserver(function(
