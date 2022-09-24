@@ -45,6 +45,7 @@ html
 a 
 {
     text-decoration: none;
+    outline: none !important;
 }
 
 ul, li 
