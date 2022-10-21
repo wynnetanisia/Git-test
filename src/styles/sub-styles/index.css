@@ -17,10 +17,18 @@ header.header.header-main.transparent .nav-toggle .bar
     background: var(--white);
 }
 
-header.header.header-main.transparent a.current-page,
-header.header.header-main.transparent a:hover 
+header.header.header-main.transparent a.current-page::after,
+header.header.header-main.transparent a:hover:after
 {
-    color: var(--lighter-green);
+    background-color: var(--white);
+}
+
+header.header.header-main.transparent a.current-page::after,
+header.header.header-main.transparent a:hover::after 
+{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+        transform: scale(1);
 }
 
 .image-background.main
