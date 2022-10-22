@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozon | Sign In</title>
+    <title>Ozon | Login</title>
 
     <link rel="stylesheet" href="../src/styles/main.css">
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
@@ -24,12 +24,11 @@
         <h1 class="ozon-logo">Ozon</h1>
     </header>
 
-    <main>
-        
+    <main class="sign">
         <div class="sign-section">     
             <div class="sign-heading">
                 <div class="title">
-                    <h1>Welcome</h1>
+                    <h1>Login</h1>
                     <p>Don't have an account? <a href="../sign-up/">Sign Up</a></p>
                 </div>
     
@@ -59,8 +58,8 @@
                     </div>
         
                     <!-- after click, goes to /main page -->
-                    <!-- <a href="../main/" class="signButton">Sign In</a> -->
-                    <input type="submit" onclick="location.href='/main'" value="Sign In" class="signButton">
+                    <a href="../main/" class="signButton">Login</a>
+                    <!-- <input type="submit" onclick="location.href='/main'" value="Sign In" class="signButton"> -->
                 </form>
     
                 <div class="secondary-sign">
@@ -92,8 +91,7 @@
                 </div>
             </div>
         </div>
-
+        <img class="sign-illustration" src="../assets/illustration/login-illustration.svg" alt="Login Illustration">
     </main>
-
 </body>
 </html>

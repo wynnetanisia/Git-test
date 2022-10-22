@@ -1,3 +1,15 @@
+main.sign 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-illustration 
+{
+    display: none;
+}
+
 .sign-section 
 {
     display: -webkit-box;
@@ -11,6 +23,11 @@
     gap: 3rem;
 
     width: 100%;
+}
+
+.sign-section * 
+{
+    font-family: "Poppins", sans-serif !important;
 }
 
 .sign-heading
@@ -29,7 +46,7 @@
 
 .sign-heading .title 
 {
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
     margin-bottom: 3rem;
     width: 100%;
 }
@@ -42,7 +59,7 @@
 
 .sign-heading .title p
 {
-    color: var(--darker-green);
+    color: var(--black);
     font-size: .85em;
 }
 
@@ -178,7 +195,7 @@
 .primary-sign .inputs .input input:focus,
 .primary-sign .inputs .input input:valid
 {
-    border-color: var(--light-green);
+    border-color: var(--green);
 }
 
 .primary-sign .inputs .input input:focus ~ .placeholder,
@@ -218,7 +235,7 @@
 
 .primary-sign .signButton 
 {
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
     font-weight: 600;
     font-size: .9em;
     
@@ -332,7 +349,7 @@
     color: var(--white);
 
     /* to make the icon looks right at the middle */
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 @media screen and (min-width: 576px) {
@@ -355,10 +372,21 @@
 @media screen and (min-width: 768px) {
     .sign-section
     {
-        max-width: 656px;
+        width: 60%;
+        max-width: 600px;
     }
-}
 
-@media screen and (min-width: 1024px) {
+    main.sign 
+    {
+        flex-direction: row-reverse;
+        justify-content: space-around !important;
+        gap: 2rem;
+    }
     
+    .sign-illustration
+    {
+        display: block;
+        width: 40%;
+        max-width: 600px;
+    }
 }
