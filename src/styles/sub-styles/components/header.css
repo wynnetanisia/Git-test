@@ -40,6 +40,41 @@ header
             align-items: center;
 }
 
+.logo 
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo .logo-image 
+{
+    width: 24px;
+    height: 24px;
+}
+
+.logo .logo-image.aos
+{
+    opacity: 0;
+    transition: .3s;
+}
+
+.logo .logo-image.aos.scrolled
+{
+    opacity: 1;
+}
+
+.logo div.logo-image 
+{
+    background: url(../../../../assets/illustration/logo-white.svg);
+    background-size: cover;
+}
+
+.logo div.logo-image.scrolled 
+{
+    background: url(../../../../assets/illustration/logo.svg);
+}
+
 .ozon-logo
 {
     font-size: 1.5em;
@@ -127,6 +162,7 @@ header
 
 .nav-mobile ul li a
 {
+    display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     color: var(--white);
@@ -138,10 +174,30 @@ header
     transition: .3s;
 }
 
-.nav-mobile ul li a.current-page, .nav-mobile ul li a:hover
+.nav-mobile ul li a::after 
 {
-    color: var(--lighter-green);
+    content: '';
+    display: block;
+    margin-top: .2rem;
+    width: 100%;
+    height: 1.5px;
+    background: var(--white);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: 10px;        
 }
+
+.nav-mobile ul li a.current-page::after,
+.nav-mobile ul li a:hover::after
+{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+        transform: scale(1);
+} 
 
 @media screen and (min-width: 576px) {
     .nav-mobile ul li a
@@ -171,7 +227,9 @@ header
 
     .nav-full ul li a
     {
+        display: inline-block;
         font-family: "Montserrat", sans-serif;
+        font-size: 1em;
         color: var(--green);
 
         -webkit-transition: .3s;
@@ -181,10 +239,30 @@ header
         transition: .3s;
     }
 
-    .nav-full ul li a.current-page, .nav-full ul li a:hover
+    .nav-full ul li a::after 
     {
-        color: var(--lighter-green);
+        content: '';
+        display: block;
+        margin-top: .2rem;
+        width: 100%;
+        height: 1.5px;
+        background: var(--green);
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        border-radius: 10px;        
     }
+
+    .nav-full ul li a.current-page::after,
+    .nav-full ul li a:hover::after
+    {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    } 
 
     .nav-mobile
     {

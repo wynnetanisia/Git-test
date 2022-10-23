@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozon</title>
+    <link rel="icon" href="../../assets/illustration/logo.svg" type="image/svg+xml">
+    <title>Ozon | Blogs</title>
 
     <link rel="stylesheet" href="../../src/styles/main.css">
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
@@ -22,11 +23,14 @@
     </div>
     
     <header class="header header-main">
-        <h1 class="ozon-logo">
+        <div class="logo">
+            <h1 class="ozon-logo">
+                <!-- link will be always headed to /main -->
+                <a href="./">Ozon</a>
+            </h1>
 
-            <!-- link will be always headed to /main -->
-            <a href="../">Ozon</a>
-        </h1>
+            <img class="logo-image" src="../../assets/illustration/logo.svg" alt="Ozon Logo">
+        </div>
 
         <div class="nav-toggle">
             <div class="bar"></div>
@@ -308,7 +312,10 @@
     <footer>
         <div class="top">
             <div class="ozon-desktop">
-                <h1>Ozon</h1>
+                <div class="logo">
+                    <h1>Ozon</h1>
+                    <img class="logo-image" src="../../assets/illustration/logo-footer.svg" alt="Ozon Logo">
+                </div>
                 <p>Discover this world and the future from Ozon.</p>
             </div>
 
@@ -347,7 +354,7 @@
                 <h2>Others</h2>
 
                 <div class="links">
-                    <a href="../../sign-in/">Sign Out</a>
+                    <a href="../../login/">Sign Out</a>
                     <a href="" class="scroll-to-top">Scroll to Top</a>
                 </div>
             </div>

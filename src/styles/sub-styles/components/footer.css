@@ -8,7 +8,10 @@ footer
     font-family: "Inter", sans-serif;
 
     padding-top: 3rem !important;
-    padding-bottom: .5rem !important
+    padding-bottom: .5rem !important;
+
+    position: relative;
+    bottom: 0;
 }
 
 footer * 
@@ -38,6 +41,11 @@ footer .line
 
     /* only displayed after mobile size */
     display: none;
+}
+
+footer .top-container
+{
+    margin-bottom: 3rem;
 }
 
 footer .top 
@@ -73,9 +81,68 @@ footer .top .share-us li:hover
     background-color: var(--lighter-green);
 }
 
-footer .top h1, footer .top h2
+footer .top .logo, footer .top h2, footer .top-container h2
 {
     margin-bottom: .7rem;
+}
+
+footer .top .logo .logo-image 
+{
+    width: 32px !important;
+    height: 32px !important;
+}
+
+footer .blog-letter *
+{
+    text-align: left;
+    font-family: "Inter", sans-serif;
+}
+
+footer .blog-letter p 
+{
+    margin-bottom: .5rem;
+}
+
+footer .blog-letter .subscribe 
+{
+    width: 100%;
+    display: flex;
+
+    max-width: 600px;
+}
+
+footer .blog-letter input[type="text"]
+{
+    width: 70%;
+    padding: 1.1rem;
+    color: var(--black);
+    font-size: 1em;
+
+    border: none;
+    outline: none;
+}
+
+footer .blog-letter input[type="submit"]
+{
+    width: 30%;
+    padding: 1rem;
+
+
+    border: none;
+    outline: none;
+
+    font-size: 1.1em;
+    text-align: center;
+    background-color: var(--orange);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+footer .blog-letter input[type="submit"]:hover 
+{
+    opacity: .7;
 }
 
 footer .bottom

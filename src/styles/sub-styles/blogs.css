@@ -57,7 +57,7 @@ main .content .primary-btn.create-blog
 
             -ms-grid-row-align: center;
 
-            align-self: center;
+            align-self: flex-end;
     }
     
 }

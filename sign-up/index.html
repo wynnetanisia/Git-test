@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozon | Sign In</title>
+    <link rel="icon" href="../assets/illustration/logo.svg" type="image/svg+xml">
+    <title>Ozon | Sign Up</title>
 
     <link rel="stylesheet" href="../src/styles/main.css">
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script defer src="../src/scripts/main.js"></script>
 
     <style>
+
+        main.sign 
+        {
+            flex-direction: row !important;
+        }
 
         .sign-content 
         {
@@ -40,15 +46,18 @@
     </div>
     
     <header class="header header-temp">
-        <h1 class="ozon-logo">Ozon</h1>
+        <div class="logo">
+            <h1 class="ozon-logo">Ozon</h1>
+            <img class="logo-image" src="../assets/illustration/logo.svg" alt="Ozon Logo">
+        </div>
     </header>
 
-    <main>
+    <main class="sign">
         <div class="sign-section">     
             <div class="sign-heading">
                 <div class="title">
-                    <h1>Sign Up</h1>
-                    <p>Already have an account? <a href="../sign-in/">Sign In</a></p>
+                    <h1>Welcome</h1>
+                    <p>Already have an account? <a href="../login/">Login</a></p>
                 </div>
 
             </div>
@@ -79,8 +88,8 @@
                     </div>
         
                     <!-- after click, goes to /main page -->
-                    <!-- <a href="../main/" class="signButton">Sign In</a> -->
-                    <input type="submit" onclick="location.href='/main'" value="Sign Up" class="signButton">
+                    <a href="../main/" class="signButton">Sign Up</a>
+                    <!-- <input type="submit" onclick="location.href='/main'" value="Sign Up" class="signButton"> -->
                 </form>
     
                 <div class="secondary-sign">
@@ -112,6 +121,7 @@
                 </div>
             </div>
         </div>
+        <img class="sign-illustration" src="../assets/illustration/signup-illustration.svg" alt="Welcome Illustration">
     </main>
 
 </body>
