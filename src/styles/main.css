@@ -265,7 +265,7 @@ body.loading
 
 /* MOBILE FIRST STYLES */
 
-header, main, footer, #lightbox-container, .image-background 
+header, main, footer, #lightbox-container, .image-background, .about-us, .data-detail
 {
     padding: 0 2.1rem;
 }
@@ -305,21 +305,21 @@ header, main, footer, #lightbox-container, .image-background
 }
 
 @media screen and (min-width: 768px) {
-    header, main, footer, #lightbox-container, .image-background
+    header, main, footer, #lightbox-container, .image-background, .about-us, .data-detail
     {
         padding: 0 3rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    header, main, footer, #lightbox-container, .image-background
+    header, main, footer, #lightbox-container, .image-background, .about-us, .data-detail
     {
         padding: 0 4rem;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    header, main, footer, #lightbox-container, .image-background
+    header, main, footer, #lightbox-container, .image-background, .about-us, .data-detail
     {
         padding: 0 6rem;
     }

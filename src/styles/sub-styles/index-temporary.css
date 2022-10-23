@@ -91,14 +91,14 @@
 
 .image-background .secondary-btn 
 {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 1em;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 1.3em;
 
     margin-top: .75rem;
     -ms-flex-item-align: auto !important;
         -ms-grid-row-align: auto !important;
         align-self: auto !important;
-    font-weight: 400 !important;
+    font-weight: 200 !important;
 
     border-radius: 0;
     border-color: var(--white) !important;
@@ -121,6 +121,7 @@ main .about-us h1
     font-weight: 700;
     font-size: 1.3em;
     text-align: left;
+    color: var(--light-green);
 
     margin-bottom: 2rem;
 }
@@ -319,6 +320,23 @@ main.temporary .sign-more a:hover
 
 @media screen and (min-width: 640px)
 {
+    .image-background h1 
+    {
+        font-size: 2.5em;
+    }
+    
+    .image-background p 
+    {
+        font-size: 1em;
+    }
+
+    /* main#main
+    {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }  */
+
+
     .blogs-container .blog 
     {
         -webkit-box-orient: horizontal;
@@ -385,11 +403,6 @@ main.temporary .sign-more a:hover
 }
 
 @media screen and (min-width: 1024px) {
-    .trending-blogs
-    {
-        /* padding: 2rem; */
-    }
-
     .blogs-container .blog .blog-image
     {
         max-height: 120px;

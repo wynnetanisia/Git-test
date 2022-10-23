@@ -40,6 +40,41 @@ header
             align-items: center;
 }
 
+.logo 
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo .logo-image 
+{
+    width: 24px;
+    height: 24px;
+}
+
+.logo .logo-image.aos
+{
+    opacity: 0;
+    transition: .3s;
+}
+
+.logo .logo-image.aos.scrolled
+{
+    opacity: 1;
+}
+
+.logo div.logo-image 
+{
+    background: url(../../../../assets/illustration/logo-white.svg);
+    background-size: cover;
+}
+
+.logo div.logo-image.scrolled 
+{
+    background: url(../../../../assets/illustration/logo.svg);
+}
+
 .ozon-logo
 {
     font-size: 1.5em;
