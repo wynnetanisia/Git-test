@@ -1,8 +1,14 @@
 main.sign 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .sign-illustration 
@@ -378,8 +384,12 @@ main.sign
 
     main.sign 
     {
-        flex-direction: row-reverse;
-        justify-content: space-around !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -ms-flex-pack: distribute !important;
+            justify-content: space-around !important;
         gap: 2rem;
     }
     

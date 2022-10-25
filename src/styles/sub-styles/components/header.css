@@ -42,8 +42,12 @@ header
 
 .logo 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: .5rem;
 }
 
@@ -56,6 +60,8 @@ header
 .logo .logo-image.aos
 {
     opacity: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 

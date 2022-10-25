@@ -53,9 +53,15 @@
 .edpage-container .pics-container
 {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
 }
@@ -95,12 +101,36 @@
     background-size: cover;
     background-position: center;
 
-    animation: changeBackgroundImage 10s infinite ease-in-out;
+    -webkit-animation: changeBackgroundImage 10s infinite ease-in-out;
+
+            animation: changeBackgroundImage 10s infinite ease-in-out;
 
     border: 1px solid var(--white);
 }
 
 /* 1, 4, 8, 9, 10 */
+@-webkit-keyframes changeBackgroundImage {
+    0% 
+    {
+        background-image: url(../../../assets/pictures/blog-pics/1.jpg);
+    }
+    25%
+    {
+        background-image: url(../../../assets/pictures/blog-pics/4.jpg);
+    }
+    50%
+    {
+        background-image: url(../../../assets/pictures/blog-pics/8.jpg);
+    }
+    75%
+    {
+        background-image: url(../../../assets/pictures/blog-pics/9.jpg);
+    }
+    100%
+    {
+        background-image: url(../../../assets/pictures/blog-pics/10.jpg);
+    }
+}
 @keyframes changeBackgroundImage {
     0% 
     {
@@ -127,8 +157,25 @@
 .edpage-container .pics-container .background-top, .edpage-container .pics-container .background-bottom 
 {
     background-color: var(--dark-green);
-    animation: changeBackground 10s infinite ease-in-out !important;
+    -webkit-animation: changeBackground 10s infinite ease-in-out !important;
+            animation: changeBackground 10s infinite ease-in-out !important;
 
+}
+
+@-webkit-keyframes changeBackground
+{
+    0%
+    {
+        background-color: var(--dark-green);
+    }
+    50%
+    {
+        background-color: var(--light-green);
+    }
+    100%
+    {
+        background-color: var(--dark-green);
+    }
 }
 
 @keyframes changeBackground
@@ -149,8 +196,13 @@
 
 .edpage-container .text-content
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 2rem;
 
     margin-top: 3rem;
@@ -158,8 +210,13 @@
 
 .edpage-container .text 
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: .25rem;
 }
 
@@ -193,11 +250,23 @@
     border: 1px solid var(--green);
     padding: .8rem 1.6rem;
 
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
+
     transition: .3s;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .edpage-container .text-content a.btn:hover 
@@ -210,9 +279,16 @@
 {
     .edpage-container 
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         gap: 2rem;
     }
 

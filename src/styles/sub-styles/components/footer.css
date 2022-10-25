@@ -106,6 +106,8 @@ footer .blog-letter p
 footer .blog-letter .subscribe 
 {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     max-width: 600px;
@@ -136,6 +138,10 @@ footer .blog-letter input[type="submit"]
     background-color: var(--orange);
 
     cursor: pointer;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
 
     transition: .3s;
 }

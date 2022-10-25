@@ -341,15 +341,6 @@
     color: var(--light-green) !important;
 }
 
-/* .share-overlay .share-group .copy-link.copied:hover .icon
-{
-    background: var(--light-green) !important;
-}
-.share-overlay .share-group .copy-link.copied:hover .name 
-{
-    color: var(--light-green) !important;
-} */
-
 @media screen and (min-width: 768px)
 {
     .blog-container .title-context h1
